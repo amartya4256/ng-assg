@@ -25,6 +25,13 @@
           completed
         </th>
       </tr>
+      <tr *ngFor="let todo of list" (click)="addClass($event)">
+        <td>{{todo.id}}</td>
+        <td>{{todo.type}}</td>
+        <td>{{todo.description}}</td>
+        <td>{{todo.completed}}</td>
+        
+      </tr>
     </table>
   </div>
 </div>
