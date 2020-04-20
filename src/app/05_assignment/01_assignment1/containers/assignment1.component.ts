@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class Assignment1Component {
 
+  value = '';
+  showData(input){
+    this.value = input.value;
+  }
 }
