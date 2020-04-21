@@ -10,7 +10,7 @@
   <div class="container your-code">
     <div class="field has-addons input-container">
       <div class="control">
-        <input class="input" type="text" placeholder="Input here." #inputBar (keyup)="showData(inputBar)">
+        <input class="input" type="text" placeholder="Input here." #inputBar (input)="showData(inputBar)">
       </div>
     </div>
     <p class = 'input-container'>{{value}}</p>
